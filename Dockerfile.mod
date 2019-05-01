@@ -14,7 +14,7 @@ EXPOSE 3000
 
 # Run base binary
 WORKDIR ${dir}
-ENTRYPOINT ["node", "bin/ldf-server", "/var/www/ldf-server/config.json"]
+ENTRYPOINT ["./start.sh"]
 
 # Default command
 CMD ["--help"]
